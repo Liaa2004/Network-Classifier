@@ -103,8 +103,8 @@ class ApiService {
   private wsCallbacks: Map<string, RealtimeCallback>;
 
   constructor() {
-    this.baseURL = 'http://localhost:3001/api';
-    this.wsUrl = 'ws://localhost:3001';
+    this.baseURL = 'https://network-classifier-2.onrender.com';
+    this.wsUrl = 'wss://network-classifier-2.onrender.com';
     this.ws = null;
     this.wsCallbacks = new Map();
   }
